@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Practice Event Handlers</title>
+    <style>
+      .blue-background {
+        background-color: blue;
+      }
+      .purple-background {
+        background-color: purple;
+      }
+    </style>
+  </head>
+
+  <body body id="body" class="blue-background">
+    <button id="backgroundbuttun" type="button" class="blue-background">
+      Change Background!
+    </button>
+    <button id="mybutton" type="button" class="btn-alert">
+      Alert Me!
+    </button>
+    <script>
+      // Je JavaScript code schrijf je hier
+      // Hieronder vindt de alert plaats bij klikken
+      const attachEventToAlertButton = function() {
+        const button = document.getElementById("mybutton");
+        button.addEventListener("click", function() {
+          alert("click");
+        });
+      };
+
+      // Hieronder verandert de achtergrond kleur
+      /*const changeClassBlueBackground = function() {
+        const bodyElement = document.body;
+        bodyElement.classList.add("red-background");
+      };
+      const attachEventToChangeColorButton = function() {
+        const changeColorButton = document.getElementById(
+          "change-background-button"
+        );
+        changeColorButton.addEventListener("click", function() {
+          changeClassBlueBackground();
+        });
+      };*/
+
+      const changeBackgroundColor = function() {
+        const bodyElement = document.body;
+        bodyElement.classList.add("purple-background");
+      };
+
+      const attachEventToChangeColorButton = function() {
+        const changeColorButton = document.getElementById("backgroundbuttun");
+      };
+      changeBackgroundColor.addEventListener("click", function() {
+        changeBackgroundColor();
+      });
+
+      button.addEventListener("click", function() {
+        alert("hallo");
+      });
+
+      document.addEventListener("DOMContentLoaded", event => {
+        attachEventToAlertButton();
+        changeBackgroundColor();
+
+        //the event occurred
+      });
+    </script>
+  </body>
+</html>

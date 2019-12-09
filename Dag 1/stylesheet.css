@@ -1,0 +1,77 @@
+main
+{
+
+    border-style: solid;
+    line-height: 10px;
+    border-color: grey;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+     
+}
+
+img 
+{
+
+    float: right;   
+
+
+}
+
+h2 {
+
+    color: grey;
+    font-size: 20px;
+}
+
+p {
+    color: rgb(58, 57, 57);
+
+
+
+}
+
+.d
+{
+    float: right;
+    border-style: solid;
+    line-height: 30px;
+    border-color: red;
+    border-radius: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+color: red;
+    padding: 115px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+
+}
+
+.a {
+    float: left;
+    border-style: solid;
+    line-height: 30px;
+    border-color: green;
+    border-radius: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: green;
+    padding: 115px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+
+    
+
+}
+
+nav.carla { grid-area: carla; }
+nav.m.marijn{ grid-area: marijn; }
+
+nav.carla { grid-area: carla; }
+nav.m.marijn{ grid-area: marijn; }
+
+body {
+        
+display: grid;
+grid-template-areas:
+    'carla carla marijn marijn'
+    }
